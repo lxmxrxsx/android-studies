@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Dice Roller De Verdade</string>
+    <string name="roll">Roll</string>
+    <string name="textView2">2</string>
+    <string name="description">description</string>
+    <string name="todo">TODO</string>
+</resources>
