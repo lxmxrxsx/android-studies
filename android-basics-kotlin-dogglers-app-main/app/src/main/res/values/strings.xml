@@ -20,4 +20,5 @@
     <string name="vertical">Vertical</string>
     <string name="horizontal">Horizontal</string>
     <string name="grid">Grid</string>
+    <string name="a_dog_image">a dog image</string>
 </resources>

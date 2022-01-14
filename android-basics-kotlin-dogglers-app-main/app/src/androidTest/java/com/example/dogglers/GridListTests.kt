@@ -38,7 +38,7 @@ class GridListTests : BaseTest() {
             = ActivityScenarioRule(GridListActivity::class.java)
 
     @Test
-    fun `grid_list_content_at_first_position`() {
+    fun `gridue_list_content_at_first_position`() {
         checkFirstPosition()
     }
 
