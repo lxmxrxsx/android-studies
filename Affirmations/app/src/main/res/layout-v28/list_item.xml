@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 
 <com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_margin="8dp">
@@ -18,15 +17,13 @@
             android:layout_height="194dp"
             android:importantForAccessibility="no"
             android:scaleType="centerCrop" />
-
         <TextView
             android:id="@+id/item_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="serif"
             android:padding="16dp"
-            android:textAppearance="?attr/textAppearanceHeadline6"
-            android:textSize="28sp"
-            tools:text="test" />
+            android:fontFamily="sans-serif-condensed-medium"
+            android:textFontWeight="@integer/material_motion_duration_long_1"
+            android:textAppearance="?attr/textAppearanceHeadline6" />
     </LinearLayout>
 </com.google.android.material.card.MaterialCardView>
