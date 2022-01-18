@@ -1,7 +1,6 @@
 package com.example.mywordsapp
 
 import android.os.Bundle
-import android.os.PersistableBundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -13,8 +12,8 @@ class DetailActivity: AppCompatActivity() {
         const val SEARCH_PREFIX = "https://www.google.com/search?q="
     }
 
-    override fun onCreate(savedInstanceState: Bundle?, persistentState: PersistableBundle?) {
-        super.onCreate(savedInstanceState, persistentState)
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
 
         val binding = ActivityDetailBinding.inflate(layoutInflater)
         setContentView(binding.root)

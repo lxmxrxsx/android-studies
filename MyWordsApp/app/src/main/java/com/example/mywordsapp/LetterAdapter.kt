@@ -1,18 +1,15 @@
 package com.example.mywordsapp
 
 import android.content.Intent
-import android.os.Build
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.view.accessibility.AccessibilityNodeInfo
 import android.widget.Button
-import androidx.annotation.RequiresApi
 import androidx.recyclerview.widget.RecyclerView
 import com.example.mywordsapp.DetailActivity.Companion.LETTER
-import com.example.mywordsapp.LetterAdapter.*
 
-class LetterAdapter : RecyclerView.Adapter<LetterViewHolder>() {
+class LetterAdapter :
+    RecyclerView.Adapter<LetterAdapter.LetterViewHolder>() {
 
     private val list = ('A').rangeTo('Z').toList()
 
@@ -39,5 +36,7 @@ class LetterAdapter : RecyclerView.Adapter<LetterViewHolder>() {
         }
     }
 
-    override fun getItemCount(): Int = list.size
+    override fun getItemCount(): Int {
+        return list.size
+    }
 }
