@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Navigaton Project</string>
+    <string name="aperte_para_ir_a_proxima_tela">APERTE PARA IR A PROXIMA TELA</string>
+    <string name="second_screen">Second Screen</string>
+</resources>
