@@ -1,4 +1,4 @@
-package br.com.cwi.coffees
+package br.com.cwi.nav_app
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4
@@ -19,6 +19,6 @@ class ExampleInstrumentedTest {
     fun useAppContext() {
         // Context of the app under test.
         val appContext = InstrumentationRegistry.getInstrumentation().targetContext
-        assertEquals("br.com.cwi.coffees", appContext.packageName)
+        assertEquals("br.com.cwi.nav_app", appContext.packageName)
     }
 }

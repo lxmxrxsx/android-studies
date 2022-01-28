@@ -1,4 +1,4 @@
-package br.com.cwi.coffees
+package br.com.cwi.nav_app
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

@@ -1,4 +1,4 @@
-package br.com.cwi.coffees
+package br.com.cwi.nav_app
 
 import org.junit.Test
 

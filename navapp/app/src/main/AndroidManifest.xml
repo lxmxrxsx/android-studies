@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="br.com.cwi.nespresso">
-    <uses-permission android:name="android.permission.INTERNET"/>
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    package="br.com.cwi.nav_app">
 
     <application
         android:allowBackup="true"
@@ -10,16 +8,9 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:usesCleartextTraffic="true"
-        android:theme="@style/Theme.Coffees">
+        android:theme="@style/Theme.Navapp">
         <activity
-            android:name="br.com.cwi.nespresso.presentation.CoffeeActivity"
-            android:exported="false" />
-        <activity
-            android:name="br.com.cwi.nespresso.presentation.CapsulesActivity"
-            android:exported="false" />
-        <activity
-            android:name="br.com.cwi.nespresso.presentation.MainActivity"
+            android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
