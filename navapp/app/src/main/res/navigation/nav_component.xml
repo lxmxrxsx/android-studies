@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_component"
+    app:startDestination="@id/firstScreen">
+    <fragment
+        android:id="@+id/firstScreen"
+        android:name="br.com.cwi.nav_app.FirstScreen"
+        android:label="fragment_first_screen"
+        tools:layout="@layout/fragment_first_screen" >
+        <action
+            android:id="@+id/action_firstScreen_to_secondScreen"
+            app:destination="@id/secondScreen"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim" />
+        <action
+            android:id="@+id/action_firstScreen_to_thirdScreen"
+            app:destination="@id/thirdScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/secondScreen"
+        android:name="br.com.cwi.nav_app.SecondScreen"
+        android:label="fragment_second_screen"
+        tools:layout="@layout/fragment_second_screen" >
+        <action
+            android:id="@+id/action_secondScreen_to_firstScreen"
+            app:destination="@id/firstScreen"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim" />
+        <argument
+            android:name="number"
+            app:argType="integer"
+            android:defaultValue="2" />
+    </fragment>
+    <fragment
+        android:id="@+id/thirdScreen"
+        android:name="br.com.cwi.nav_app.ThirdScreen"
+        android:label="fragment_third_screen"
+        tools:layout="@layout/fragment_third_screen" >
+        <action
+            android:id="@+id/action_thirdScreen_to_fourthScreen"
+            app:destination="@id/fourthScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/fourthScreen"
+        android:name="br.com.cwi.nav_app.FourthScreen"
+        android:label="fragment_fourth_screen"
+        tools:layout="@layout/fragment_fourth_screen" >
+        <action
+            android:id="@+id/action_fourthScreen_to_firstScreen"
+            app:destination="@id/firstScreen" />
+    </fragment>
+</navigation>
